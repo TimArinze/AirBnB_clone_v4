@@ -1,6 +1,6 @@
-$('document').ready(function () {
+$('document').ready(() => {
   const check = {};
-  $('input[type="checkbox"]').change(function () {
+  $('input[type="checkbox"]').change(() => {
     if (this.checked == true) {
       check[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
